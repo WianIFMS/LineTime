@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<head>
+	<title>LineTime empresas</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<style type="text/css">
+		.container{
+			text-align: center;
+			background-color:transparent;
+			
+			margin-top: 10px;
+		}
+		h1{
+			background-color: transparent;
+			color: white;
+		}
+		.col-md-3{
+			background-color: #363636;
+			border-color: 10px black;
+			border-radius: 12px; 
+			padding:5px;
+		}
+		body{
+			background-color:#3CB371;
+			
+			
+			
+		}
+		
+		.div_conteudo {
+				background-color:#2F4F4F;
+				float: both;
+				font-size: 20px;
+				cursor: pointer;
+				margin-top:05px;
+		}
+		h2{
+			color:white;
+		}	
+		#mudanca{
+				color:#BFEFFF;
+		}	
+		#botao_1{
+				margin-top:10px;
+		}		
+		.jumbotron{
+			border: 2px dashed black;
+		}	
+		.row{
+			margin-top:20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="div_conteudo em_linha"><div align="center"><font color="#FFFAFA">linetime.com.br</font></div></div>
+
+	<div class="container">
+
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4"><div class="alert alert-success" role="alert"><font color="#006400"><font face="fantasy">L</font><font color="#B22222"><font face="Marker Felt">T</font></font> - <font color="#000000"><font face="fantasy">EMPRESAS</font></div></font></h1>
+				<p class="lead"><font color="#8B4513"><b>Crie uma uma pagina oficial para sua empresa, administre e divulgue seu negócio mais facil.</b></font></p>
+			</div> 
+		</div>
+		
+		<nav class="navbar navbar-light bg-dark">
+						<a class="navbar-brand" href="#">
+						<img src="imageshtml.png" width="30" height="30" alt=""><b><font color="#F5F5DC"> Leia os termos e as condições antes de fazer o cadastro..</font></b>
+					</a>
+					<ul class="nav nav-pills">
+						<li class="nav-item">
+						<a class="nav-link active" href="#"><img src="img_TERMO.png" width="24" height="24" alt=""> Temos e Condições</a>
+						</li>
+					</ul>	
+					</nav>
+		
+		
+		<div class="row">
+			<div class="col-md-3"> 
+				<h2>Aréa de Administração</h2>
+			<form method="POST" action="ValidaLogin.php">
+				
+				
+				<label for="email" id="mudanca">Chave</label>
+				<input class="form-control" type="password" name="chave">
+				<button type="submit" class="btn btn-light" id="botao_1">Entrar</button>
+			</form>
+						 
+			</div>
+
+
+				<div class="col-md-6">
+				
+
+					<form method="POST" action="SalvarEmpresa.php">
+						
+						
+						 <label><strong><font color="#DCDCDC">Nome da Empresa</font></strong></label>
+                        <input type="text" name="nome" placeholder="Nome da Empresa" class="form-control">
+
+                        <label> <strong><font color="#DCDCDC">CNPJ</font></strong></label>
+                        <input type="number" name="cnpj" placeholder="Numero do CNPJ" class="form-control">
+										
+						<label for="estado"><strong><font color="#DCDCDC">Tipo de Negocio</font></strong></label>
+									<input type="text" name="tipo_negocio" class="form-control">
+
+						<strong><font color="#DCDCDC">Cidade</font></strong><br/>
+                        <input type="text" name="cidade" class="form-control">
+
+						<label for="logo"><strong><font color="#DCDCDC">Logo</font></strong></label>
+						<input type="file" name="foto" id="foto" class="form-control"><br/>
+						
+						<button type="submit" class="btn btn-dark btn-lg btn-block" id="salvar">Salvar Empresa</button>
+						
+					</form>
+					</div>
+		    
+            
+				
+					<div class="col-md-3">
+					<div id="mudanca">Aviso</div> 
+						<h2>Livre Para Testes</h2>
+						<hr></hr>
+							    <div class="informacao">
+								    <h3 class="content-subhead">
+								        <i class="fas fa-tools"></i>
+								            Conheça nossa plataforma para ajudar sua empresa
+								    </h3>
+								    	<p>
+								            <font color="#FFFFFF">
+									            Você empreendedor, pode divulgar sua empresas em diversos modulos diferentes.
+									            Desde do micro empreendedor até grandes empresas, terão a oportunidade de obter
+									            views de nossos usuários em uma forma bem dinâmica e acessivel ao empreendedor.
+									        </font>    
+								        </p>
+								        <button class="button-secondary pure-button">Saber mais</button>
+								</div>
+					</div>	
+				
+		   
+		
+	</div>		
+</div>
+</body>
+</html>

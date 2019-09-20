@@ -1,0 +1,1179 @@
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+    color: #000000;
+    background: #F5F5F5;
+    
+  
+}
+
+a {
+    text-decoration: none;
+    color: #1b98f8;
+}
+
+/* --Input de busca --
+
+*/
+
+.input_busca{
+    margin-top: 15px;
+    width: 99%;
+}
+
+#formulario-header{
+     border-radius: 4px;
+}
+.formulario-header{
+    margin-top: 20px;
+    margin-left: 10px;
+   
+
+}
+.pure-input-rounded {
+    width: 95%;
+    margin-top: 10px;
+}
+
+.button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+            margin-top: 15px;
+            border-radius: 35px;
+}
+
+.button-warning {
+            color: white;
+            border-radius: 20px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            background: #9BCD9B;
+            margin-top: -30px;
+            margin-left: 10px;
+}
+.button-saida{
+    color: white;
+    border-radius: 5px;
+    background: #000000;
+    margin-left: 4px;
+    padding: 0.5px 20px;
+    margin-top: 0px;
+
+}
+
+.button-interacao{
+    border-radius: 5px;
+    background:#EEE9E9;
+    border: 0.8px solid #458B74;
+    color:#008B45;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 4px 15px;
+    margin-left: 10px;
+
+}
+
+.interacao-modal-1{
+    background:transparent;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 2.2);
+    color:rgba(143,188,143);
+    padding: 2px 15px;
+    margin-left: 10px;
+    margin-top: -30px;
+}
+
+.interacao-modal-2{
+    background:transparent;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 2.2);
+    color:#EE3B3B;
+    padding: 2px 15px;
+    margin-left: 10px;
+    margin-top: -30px;
+}
+
+.interacao-modal-3{
+    background:transparent;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 2.2);
+    color:#EE9A00;
+    padding: 2px 15px;
+    margin-left: 10px;
+    margin-top: -30px;
+}
+.button-tds-amigos{
+    color: black;
+    border-radius: 5px;
+    background: #DCDCDC;
+    margin-left: 4px;
+    width: 95%;
+    height: 25px; 
+    margin-top: 37px;
+    margin-bottom: 3px;
+}
+.comentarios{
+    color:#2F4F4F;
+    font-size: 16px;
+    margin-left: 5px;
+    text-decoration: none;
+
+}
+#linhaVertical{
+    height: 500px;
+    border-left: 2px solid;
+}
+.pure-button-group{
+   margin-top: -40px;
+   margin-left: 36%;
+}
+.pure-table{
+            width: 100%;
+
+}
+.pure-menu-item-2{
+    text-align: left;
+    font-size: 12px;
+    overflow-x: hidden;
+    position:left; 
+    margin-top: 10px;
+}
+.numero-de-tops{
+    border: none;
+    color:#8B8989;
+    background:#FFFFFF;
+    padding: 3px 4px;
+    margin-right: 15px;
+    position: center;
+}
+.numero-de-naogostei{
+    margin-top: none;
+    border: none;
+    color:#8B8989 ;
+    background:#FFFFFF;
+    padding: 3px 4px;
+    margin-right: 15px;
+    position: center;
+}
+.numero-de-compartilhamento{
+    margin-top: none;
+    border: none;
+    color:#8B8989 ;
+    background:#FFFFFF;
+    padding: 3px 4px;
+    position: right;
+    position: center;
+}
+.status-interacoes{
+    color:#2F4F4F;
+    margin-top: 5px;
+}
+
+a.button-interacao
+     {
+     border: 1px;
+     text-decoration: none;
+     position: relative;    
+     z-index: 34;
+     margin-top:2%;
+     }
+  a.button-interacao:hover
+     {
+     border-bottom: 1px dashed #7a7a7a;
+     text-decoration: none;
+     color: #7a7a7a;
+     z-index: 25
+     }
+  a.button-interacao span
+     {
+     display: none
+     }
+  a.button-interacao:hover span
+     {
+     border:0.5px dashed #556B2F;
+     border-radius: 5px;
+     background-color: #FFFFFF;
+     position: absolute;
+     display: block;
+     padding: 3px;
+     width: 155px;
+     top:3em 1 ;
+     left:1em;
+     }
+
+.secondary-button {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+.primary-button {
+    color: #fff;
+    background: #A9A9A9;
+    margin: 1em 0;
+    width: 100%;
+}
+.secondary-button {
+    background: #fff;
+    border: 1px solid #006400;
+    color: #000000;
+    padding: 0.5em 2em;
+    font-size: 70%;
+    margin-left: 5px;
+}
+
+/*
+ * -- LAYOUT STYLES --
+ * This layout consists of three main elements, `#nav` (navigation bar), `#list` (email list), and `#main` (email content). All 3 elements are within `#layout`
+ */
+#layout, #nav, #list, #main {
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+/* Make the navigation 100% width on phones */
+#nav {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background:#000000;
+    text-align: center;
+}
+/* Show the "Menu" button on phones */
+#nav .nav-menu-button {
+    display: block;
+    top: 13em;
+    right: 9em;
+    position: absolute;
+}
+#list {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    text-align: center;
+}
+#list .nav-menu-button-dois {
+    display: block;
+    top: 10.5em;
+    position: absolute;
+    margin-left: 10px;
+
+
+}
+
+/* When "Menu" is clicked, the navbar should be 80% height */
+#nav.active {
+    height: 80%;
+    background: transparent;
+
+}
+#list.active {
+    height: 80%;
+}
+/* Don't show the navigation items... */
+.nav-inner {
+    display: none;
+
+}
+.nav-inner {
+    display: none;
+
+}
+/* ...until the "Menu" button is clicked */
+#list.active .list-inner {
+    display: block;
+    padding: 6em 1;
+    margin-top: -20px;
+}
+.list-inner {
+    display: none;
+
+}
+.list-inner {
+    display: none;
+
+}
+/* ...until the "Menu" button is clicked */
+#nav.active .nav-inner {
+    display: block;
+    padding: 7em 10;
+    margin-top: 125px;
+}
+
+/*
+ * -- NAV BAR STYLES --
+ * Styling the default .pure-menu to look a little more unique.
+ */
+#nav .pure-menu {
+    background: #363636;
+    border: none;
+    text-align: left;
+    display: block;
+    border-top: 4px solid #556B2F;
+    border-radius: 5px;
+
+}
+    #nav .pure-menu-link:hover,
+    #nav .pure-menu-link:focus {
+        background: #2F4F4F;
+    }
+    #nav .pure-menu-link {
+        color: #fff;
+        margin-left: 0.9em;
+    }
+    #nav .pure-menu-heading {
+        border-bottom: none;
+        font-size:80%;
+        color: #FFFFFF;
+        background: #8B8989;
+    }
+   
+
+
+/*
+ * -- EMAIL STYLES --
+ * Styles relevant to the email messages, labels, counts, and more.
+ */
+.email-count {
+    color: rgb(75, 113, 151);
+}
+
+.email-label-personal,
+.email-label-work,
+.email-label-travel {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 0.5em;
+    border-radius: 3px;
+}
+.email-label-personal {
+    background: #ffc94c;
+}
+.email-label-work {
+    background: #41ccb4;
+}
+.email-label-travel {
+    background: #40c365;
+}
+
+
+/* Email Item Styles */
+.email-item {
+    padding: 0.9em 1em;
+    border-bottom: 1px solid #ddd;
+    border-left: 6px solid transparent;
+    margin-top: 5px;
+    
+
+}
+    .email-avatar {
+        border-radius: 5px;
+        margin-right: 0.5em;
+    }
+    .email-name,.email-subject {
+        margin:0;
+        font-size: 15px;
+        margin-top: 0px;
+    }
+    .email-subject-2 {
+        margin-top: 5px;
+        float:right;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+    .email-name {
+        text-transform: uppercase;
+        color: #999;
+    }
+    .email-desc {
+        font-size: 80%;
+        margin: 0.2em 0;
+    }
+    .email-desc-2{
+        text-align: center;
+        font-size: 70%;
+        margin: 0.4em 0;
+        margin-top: -20px;
+    }
+
+.email-item-selected {
+    background: #FFFAFA;
+}
+.email-item-selected-2 {
+    background: #363636;
+}
+.email-item-unread {
+    border-left: 3px solid #8FBC8F;
+    border-radius: 5px;
+}
+.email-item-unread-2 {
+    border-bottom: 3px solid #CD3333;
+    border-radius: 5px;
+}
+.email-item-unread-3 {
+    border-left: 3px solid #8B1A1A;
+    border-radius: 5px;
+}
+
+.email-item-unread-4 {
+    border-bottom: 3px solid #696969;
+    border-radius: 5px;
+}
+.email-item-unread-5 {
+    margin-top: 10px;
+    border-top: 3px solid #556B2F;
+    border-radius: 5px;
+}
+.email-item-unread-6 {
+    border-bottom: 3px solid #548B54;
+    border-radius: 5px;
+
+}
+.email-item-unread-7 {
+    
+    padding:  4px solid #8B2500;
+    
+}
+.email-item-unread-8 {
+    border-left: 3px solid #2F4F4F;
+    border-radius: 13px;
+}
+.email-item-unread-9 {
+    border-left: 3px solid #2F4F4F;
+    border-radius: 13px;
+}
+.email-item-unread-10 {
+    border-left: 3px solid #2F4F4F;
+    border-radius: 13px;
+}
+.email-item-unread-11 {
+    border-right: 3px solid #8FBC8F;
+    border-radius: 5px;
+}
+
+/* Email Content Styles */
+.email-content-header,.email-content-body, .email-content-footer {
+    margin-top: 1%;
+    padding: 1em 2em;
+    background: #fff;
+
+
+}
+    .email-content-header {
+        margin-top: -10px;
+        margin-left: 30px;
+        border-bottom: 1px solid #ddd;
+        background: #fff;
+        
+    }
+
+        .email-content-title {
+            margin: 0.5em 0 0;
+            text-align: center;
+        }
+        .email-content-title-2 {
+            margin: 0.0em 0 0;
+            text-align: left;
+            margin-top: 0px;
+			font-style:normal;
+			font-stretch: ultra-expanded;
+        }
+        .email-content-subtitle {
+            font-size: 1em;
+            margin: 0;
+            font-weight: normal;
+        }
+            .email-content-subtitle span {
+                color: #999;
+            }
+    .email-content-controls {
+        margin-top: 2em;
+        text-align: right;
+    }
+        .email-content-controls .secondary-button {
+            margin-bottom: 0.3em;
+        }
+
+    .email-avatar {
+        width: 40px;
+        height: 40px;
+    }
+    .email-avatar-h {
+        border: 2px solid #B4EEB4; 
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+        padding: 1px;
+    }
+
+    .footer {
+    background: #111;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.pure-form{
+    margin-left: 0px;
+    margin-top: 60px;
+}
+#hora{
+    background:#698B69;
+    font-size: 12px;
+    color:#fff ;
+    margin-left: 15%;
+}
+#hora-2{
+    background:#696969;
+    font-size: 12px;
+    color:#FFFFFF ;
+    margin-left: 15%;
+}
+.separacao{
+    margin-top: 11%;
+}
+
+.quadrado{
+    padding: 5px;
+    border:1px solid #708090;
+    border-radius: 8px;
+    background: #F8F8FF;
+    margin-top: 0px;
+    margin: 5px;
+    margin-right: 20px;
+    margin-bottom: none;
+}
+
+.img-historias{
+    margin-left: 20px;
+
+    
+}
+.quadrado{
+        -webkit-box-shadow: 5px 3px 2px rgba(50, 50, 50, 0.67);
+        -moz-box-shadow:    5px 3px 2px rgba(50, 50, 50, 0.67);
+        box-shadow:         5px 3px 2px rgba(50, 50, 50, 0.67);
+    
+}
+.hr {
+    background-color: #DCDCDC;
+    float: both;
+    width: 100%;
+    height:20px;
+    margin-left: 5%;
+}
+.div_conteudo {
+                background-color: black;
+                float: both;
+                font-size: 20px;
+                cursor: pointer;
+                margin-top:05px;
+                margin-left: 5px;
+                width: 100%;
+                position: fixed;
+}
+
+.pure-table-2 {
+    margin-left: 5px;
+    background-color:#000000;
+    width: 100%;
+    height: 73px;
+    margin-top: 0px;
+    text-align: left;
+    position: fixed;
+
+}
+
+.pure-table-3 {
+    margin-left: 5px;
+    background-color: #698B69;
+    width: 100%;
+    height: 75px;
+    margin-top: 75px;
+    text-align: left;
+    position: fixed;
+    border-top: 4px solid #556B2F;
+    border-radius: 5px;
+
+}
+
+.pure-input-1-2{
+    background: #F5F5F5;
+    color:#000000;
+}
+
+.post {
+    margin-left: 10%;
+    padding-bottom: 1em;
+    margin-top: 0px;
+}
+
+.pure-button-active-2{
+    border: 4px;
+    border-radius: 0px;
+    float: right;
+    padding: 2px 8px;
+    margin-top: 0px;
+}
+
+
+.header {
+    text-align: center;
+    top: 15px;
+    margin: 3em auto;
+}
+.post-title {
+    font-size: 1.2em;
+    color: #8B8989;
+    margin-bottom: 0.2em;
+    margin-left: 20%;
+    text-decoration: none;
+}
+.post-avatar {
+    border-radius: 50px;
+    float: left;
+    margin-left: 1em;
+}
+
+.post-avatar-p {
+    border-radius: 50px;
+    border: 2px solid #F8F8FF;
+    float: left;
+    margin-left: 1em;
+    margin-top: 10px;
+}
+.post-description {
+    color: #444;
+    text-align: center;
+    margin-top: -50px;
+
+}
+
+.caixaDeTexto{
+    padding: 10%;
+    background: #fff;
+
+}
+
+.post-meta {
+    color: #999;
+    font-size: 70%;
+    padding: 10%;
+    margin: 5px;
+    background: #fff;
+    margin-top: 10px;
+}
+.post-category {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #fff;
+    background: #999;
+    font-size: 80%;
+}
+    .post-category-design {
+        background: #5aba59;
+    }
+    .post-category-pure {
+        background: #4d85d1;
+    }
+    .post-category-yui {
+        background: #8156a7;
+    }
+    .post-category-js {
+        background: #df2d4f;
+    }
+
+.post-images {
+    margin: 1em 0;
+}
+.post-image-meta {
+    margin-top: -3.5em;
+    margin-left: 1em;
+    color: #fff;
+    text-shadow: 0 1px 1px #333;
+}
+
+.amigos-online{
+        margin-left: 650px;
+        width: 155px;
+        height: 74%;
+        background:#F5F5F5;
+        margin-top: 12%;
+
+}
+
+.amigos-online{
+        border-radius: 12px;
+
+}
+.amigos-online ul li {
+    margin-top: 5px;
+}
+.amigos-online{ height:485px; overflow:scroll; } /* limitando altura do box */
+.amigos-online::-webkit-scrollbar { width:07px; background:#e3e0d6; display: none;} /* configurando scroll */
+.amigos-online::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
+.amigos-online::-webkit-scrollbar-thumb { border-radius:10px; background:#000000;  }
+
+#list::-webkit-scrollbar { width:10px; background:#A9A9A9; }
+#list::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
+#list::-webkit-scrollbar-thumb { border-radius:10px; background:#000000;  }
+
+#empresas::-webkit-scrollbar { width:10px; background:#A9A9A9; }
+#empresas::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
+#empresas::-webkit-scrollbar-thumb { border-radius:10px; background:#000000;  }
+
+#textarea{
+            border: 1px solid #A2CD5A;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 30px;
+            background:#4F4F4F;
+            color:#fff;
+}
+
+#post-header{
+    margin-top: -0.5%;
+}
+
+.breadcrumb{
+    margin-top: 5px;
+    margin-bottom: none;
+
+}
+.fab{
+  position: fixed;
+  bottom:15px;
+  right:10px;
+}
+
+.fab button{
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #BEBEBE;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0,0,0,.4);
+  font-size: 24px;
+  color: white;
+    
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.fab button.main{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #000000;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+}
+
+.fab button.main:before{
+  content: '?';
+  color:#2E8B57;
+}
+
+.fab ul{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  padding:0;
+  padding-right:5px;
+  margin:0;
+  list-style:none;
+  z-index:10;
+  
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.fab ul li{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: -10%;
+  opacity: 0;
+  
+  -webkit-transition: .3s ease-out;
+  -moz-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.fab ul li label{
+  margin-right:10px;
+  white-space: nowrap;
+  display: block;
+  margin-top: 10px;
+  padding: 5px 8px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  border-radius:3px;
+  height: 18px;
+  font-size: 16px;
+  pointer-events: none;
+  opacity:0;
+  
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.fab button.main:active,
+.fab button.main:focus{
+  outline: none;
+  background-color: #000000;
+  box-shadow: 0 3px 8px rgba(0,0,0,.5);
+ }
+ 
+.fab button.main:active:before,
+.fab button.main:focus:before{
+  content: '?';
+}
+
+.fab button.main:active + ul,
+.fab button.main:focus + ul{
+  bottom: 70px;
+}
+
+.fab button.main:active + ul li,
+.fab button.main:focus + ul li{
+  margin-bottom: 10px;
+  opacity: 1;
+}
+
+.fab button.main:active + ul li:hover label,
+.fab button.main:focus + ul li:hover label{
+  opacity: 1;
+}
+#corpo-empresas{
+ 
+    margin:2px;
+  }
+ 
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 40em) {
+
+    /* Move the layout over so we can fit the nav + list in on the left */
+    #layout {
+        padding-left:530px; /* "left col (nav + list)" width */
+        position: relative;
+    }
+
+    /* These are position:fixed; elements that will be in the left 500px of the screen */
+    #nav, #list,#historias,#empresas,.amigos-online {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        overflow: auto;
+    }
+
+    #nav {
+        margin-left:-530px; /* "left col (nav + list)" width */
+        width:170px;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    
+
+    
+    /* Show the menu items on the larger screen */
+    .nav-inner {
+        display: block;
+        padding: 2em 0;
+    }
+
+    .list-inner {
+        display: block;
+        padding: 2em 1;
+    }
+    /* Hide the "Menu" button on larger screens */
+    #nav .nav-menu-button {
+        display: none;
+    }
+    #list .nav-menu-button-dois {
+        display: none;
+    }
+
+    #list {
+        margin-left: -350px;
+        width: 100%;
+        height: 33%;
+        border-bottom: 1px solid #ddd;
+
+       
+    }
+
+
+    #main {
+        position: fixed;
+        top: 33%;
+        right: 0;
+        bottom: 0;
+        left: 150px;
+        overflow: auto;
+        width: auto; /* so that it's not 100% */
+    }
+
+}
+@media only screen and (max-width: 650px) {
+   
+  .list .nav-menu-button-dois{
+    display: none;
+  }
+  .list-inner {
+        display: none;
+        padding: 2em 0;
+
+    }
+  #historias{
+    display: none;
+  }
+  #empresas{
+    margin-top: 5%;
+    overflow-x: none;
+    overflow-y: hidden;
+    margin-left: -0px;
+    width:349px;
+    height: 80px;
+    border-right: 1px solid #ddd;
+    position: relative;
+  }
+  #cabecalho-empresas{
+  display: none;
+  }
+  #h5-nome{
+    font-size: 12px;
+    position:center;
+    padding: -10px;
+  }
+ 
+  .pure-table-3{
+    width: 100%;
+    height: 10%;
+    margin:0px;
+    margin-top: -40%;
+    position:absolute;
+    
+  }
+  .post-header{
+  width: 100%;
+  height: 20%;
+  margin-top: 5%;
+  }
+  .email-content-title{
+    position:center;
+    margin-top: -5%;
+    display: none;
+  }
+  .pure-table-2{
+    width: 100%;
+    height: 06%;
+    margin-top: -54%;
+    position: absolute;
+    margin-left: 0px;
+    margin-bottom: none;
+  }
+  #barra-pesquisa{
+    margin-top: 68%;
+  }
+  .input_busca{
+    margin-top: 3px;
+    margin-left: 1.5px;
+  }
+  #button-pesquisa{
+    margin-top: -1%;
+  }
+
+  .post {
+    padding-bottom: 1em;
+    margin-top: 0px;
+}
+  .post-avatar-p{
+    margin-top: 01%;
+  }
+    .separacao{
+        margin-top: 30%;
+    }
+    #textarea{
+            border:hidden;
+            width: 50%;
+            height: 2.8em;
+            margin-top: 05px;
+            margin-left: 20px;
+            background:#4F4F4F;
+            color:#fff;
+            
+}
+#button-postheader-1{
+    margin-right: 20px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+#button-postheader-2{
+    display: none;
+}
+#button-postheader-3{
+    display: none;
+}
+.amigos-online{
+    display: none;
+}
+.amigos-offine{
+    display: none;
+}
+.button-saida{
+    color: #EEE9E9;
+    border-radius: 5px;
+    background:#000000;
+    float:right;
+    margin-top: -11%;
+    padding: 1px 10px;
+    margin-right: 1%;
+}
+.quadrado{
+    padding: 5px;
+    border-radius: 8px;
+    background: #F5F5F5;
+    margin-top: 0px;
+    width: 137%;
+    height: 5%;
+    margin-left: -25px;
+}
+.quadrado{
+        -webkit-box-shadow: 1px 1px 2px rgba(50, 50, 50, 0.77);
+        -moz-box-shadow:    1px 1px 2px rgba(50, 50, 50, 0.77);
+        box-shadow:         1px 1px 2px rgba(50, 50, 50, 0.77);
+    
+}
+.breadcrumb{
+    margin-top: -10%;
+}
+.breadcrumb li {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 7%;
+}
+.comentarios{
+    text-align: center;
+    margin: 5px;
+    font-size: 15px;
+}
+.email-subject-2 {
+        margin-top: -12px;
+        float:right;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+.post-meta{
+    font-size: 15px;
+    margin-top: 29%;
+}
+.button-interacao{
+    margin-top: 0%;
+    margin-left: 15%;
+    padding: 4px 70px;
+}
+#button-acao-comentario{
+    margin-left: 30%;
+    display: none;
+}
+#hr-post{
+    margin-top: 70%;
+}
+#input-coment-post{
+    border:hidden;
+    width: 50%;
+    height: 20%;
+    display:none;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: relative; /* Stay in place */
+  z-index: 9; /* Sit on top */
+  left: 0%;
+  top: 5px;
+  margin-bottom: 5px;
+  width: 100%; /* Full width */
+  height: 90px; /* Full height */
+  overflow-y: hidden; /* Enable scroll if needed */
+  overflow-x: hidden;
+  background: #EEE9E9;
+  border-radius: 7px;
+  border: 1px solid #2F4F4F;
+    
+}
+
+.numero-de-tops{
+    margin-top: -5px;
+    color:#8B8989 ;
+    padding: 0px 0px;
+    margin-right: 0px;
+    position: center;
+}
+.numero-de-naogostei{
+    margin-top: -5px;
+    color:#8B8989 ;
+    padding: 0px 0px;
+    margin-right: 0px;
+    position: center;
+}
+.numero-de-compartilhamento{
+    margin-top: -5px;
+    color:#8B8989 ; 
+    padding: 0px 0px;
+    position: right;
+    position: center;
+}
+}
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 60em) {
+
+    /* This will take up the entire height, and be a little thinner */
+    #list {
+        margin-left: -350px;
+        width:345px;
+        height: 32%;
+        border-right: 1px solid #ddd;
+    }
+
+    
+    /* This will now take up it's own column, so don't need position: fixed; */
+    #main {
+        position: static;
+        margin: 0;
+        padding: 0;
+    }
+    #historias{
+        margin-left: -350px;
+        width:345px;
+        height: 24%;
+        border-right: 1px solid #ddd;
+        margin-top: 16%;
+        overflow-y: hidden;
+    }
+    #empresas{
+        margin-left: -350px;
+        width:345px;
+        height: 40%;
+        border-right: 1px solid #ddd;
+        margin-top: 28.5%;
+    }
+    
+}
+

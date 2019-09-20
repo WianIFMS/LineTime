@@ -1,0 +1,149 @@
+<div class="email-content">
+            <div class="email-content-header pure-g">
+                
+                <div class="email-content-controls pure-u-1-2">
+                    <button class="secondary-button pure-button">Atualiza Pagina</button>
+                    <button class="secondary-button pure-button">Configuraçao</button>
+                    <button class="secondary-button pure-button">Sair</button>
+                </div>
+
+
+                <form class="formulario-header">
+                    
+                    <th><font color="#8B8B83">  </font></th>
+                    <textarea rows="4" cols="60" id="formulario-header" placeholder="Digite aqui o que está pensando..."></textarea>        
+                </form>    
+
+            </div>
+
+            <div class="email-content-body">
+                
+                <div id="usuario_Tilo">
+                    <div class="pure-u">
+                        <img width="64" height="64" alt="Tilo Mitra&#x27;s avatar" class="email-avatar" src="img/common/tilo-avatar.png">
+                    </div>
+
+                    <div class="pure-u-3-4">
+                        <h5 class="email-name">Tilo Mitra</h5>
+                        <h6 class="email-subject"><font color="#191970">Público</font></h6>
+                            <p class="email-desc">
+                                Essa rede social vai bombar.
+
+                            </p>   
+                    </div>
+                </div>    
+
+                <hr></hr>
+
+                <div id="usuario_Eric">
+                    <div class="pure-u">
+                        <img width="64" height="64" alt="Eric Ferraiuolo&#x27;s avatar" class="email-avatar" src="img/common/ericf-avatar.png">
+                    </div>
+
+                    <div class="pure-u-3-4">
+                        <h5 class="email-name">Eric Ferraiuolo</h5>
+                        <h6 class="email-subject"><font color="#191970">Público</font></h6>
+                        <p class="email-desc">
+                            Nunca vi nada comparado nota 10!!!.
+                        </p>
+                    </div>
+                </div>   
+
+                <hr></hr>
+
+                <div id="anuncio_YUI_LIBRARY">
+                    <div class="pure-u">
+                        <img width="64" height="64" alt="YUI&#x27;s avatar" class="email-avatar" src="img/common/yui-avatar.png">
+                    </div>
+
+                    <div class="pure-u-3-4">
+                        <h5 class="email-name">YUI LIBRARY</h5>
+                        <h6 class="email-subject"><font color="#B22222">Anuncio</font></h6>
+                        <p class="email-desc">
+                            Rede social com novas ferramentas e com boas perspectivas dos usuarios,
+                            vem fazendo sucesso no mundo inteiro.
+                        </p>
+                    </div>
+                </div> 
+
+                <hr></hr>
+
+                <div id="usuario_Reid_Burke">
+                    <div class="pure-u">
+                        <img width="64" height="64" alt="Reid Burke&#x27;s avatar" class="email-avatar" src="img/common/reid-avatar.png">
+                    </div>
+
+                    <div class="pure-u-3-4">
+                        <h5 class="email-name">Reid Burke</h5>
+                        <h6 class="email-subject"><font color="#191970">Público</font></h6>
+                        <p class="email-desc">
+                            Fora do comum.
+                        </p>
+                    </div>
+                </div>  
+
+                <hr></hr>
+
+                <div id="usuario_ANDREW_WOOLDRIDGE">
+                        <img width="64" height="64" alt="Andrew Wooldridge&#x27;s avatar" class="email-avatar" src="img/common/andrew-avatar.png">
+                    </div>
+
+                    <div class="pure-u-3-4">
+                        <h5 class="email-name">ANDREW WOOLDRIDGE</h5>
+                        <h6 class="email-subject"><font color="#191970">Público</font></h6>
+                        <p class="email-desc">
+                            Dizem que foi nessa instituição de ensino que eles desenvolveram a LineTine.
+                            <p>
+                                <img width="400" height="200" src="img/common/ifms.jpg">
+                            </p>    
+                        </p>
+                    </div>
+                </div>  
+
+                <hr></hr>
+
+                <div id="anuncio_YAHOO!_FINANCE">
+                    <div class="pure-u">
+                        <img width="64" height="64" alt="Yahoo! Finance&#x27;s Avatar" class="email-avatar" src="img/common/yfinance-avatar.png">
+                    </div>
+
+                    <div class="pure-u-3-4">
+                        <h5 class="email-name">YAHOO! FINANCE</h5>
+                        <h6 class="email-subject"><font color="#B22222">Anuncio</font></h6>
+                        <p class="email-desc">
+                            Derrota do governo na Câmara é resposta de Maia à queda de Bebianno.
+                            <p>
+                                <img width="400" height="200" src="img/common/noticia_yahoo.jpg">
+                            </p>    
+                        </p>
+                    </div>
+                </div>
+            
+
+            </div>
+
+<div id="main" class="pure-u-3">
+
+
+
+
+		<section class="post">
+                    <div class="quadrado">
+                        <header class="post-header">
+                            <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar" src="img/common/tilo-avatar.png">
+
+                            <h2 class="post-title"> Tilo Mitra </h2>
+
+                            <p class="post-meta">
+                                    By <a href="#" class="post-author">Tilo Mitra</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
+                            </p>
+                        </header>
+
+                        <div class="post-description">
+                            <p class="email-desc">
+                                Essa rede social vai bombar.
+
+                            </p>   
+                        </div>
+                    </div>
+                </section>

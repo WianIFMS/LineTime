@@ -1,0 +1,692 @@
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+    background: #EEE9E9;
+    color: #526066;
+}
+
+h2, h3 {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+
+/*
+ * -- Layout Styles --
+ */
+.l-content {
+    margin: 0 auto;
+}
+
+.l-box {
+    padding: 0.5em 2em;
+}
+
+/*
+ * -- Layout POSTS --
+ */
+
+#hr-post{
+    margin-top: 85px;
+}
+.pure-input-1-2{
+    background: #F5F5F5;
+    color:#000000;
+    float: left;
+    margin-top: 1px;
+}
+.comentarios{
+    color:#2F4F4F;
+    font-size: 16px;
+    margin-left: 5px;
+    text-decoration: none;
+
+}
+.comentarios a{
+text-decoration: none;
+}    
+#button-acao-comentario{
+    margin-left: -270px;
+
+}
+.quadrado{
+    padding: 5px;
+    border:1px solid #708090;
+    border-radius: 8px;
+    background: #F5F5F5;
+    margin-top: 0px;
+    margin: 5px;
+    margin-left:100px; 
+    margin-bottom: none;
+    width: 650px;
+
+}
+.quadrado{
+    -webkit-box-shadow: 5px 3px 2px rgba(50, 50, 50, 0.67);
+    -moz-box-shadow:    5px 3px 2px rgba(50, 50, 50, 0.67);
+    box-shadow:         5px 3px 2px rgba(50, 50, 50, 0.67);
+
+}
+.post-avatar {
+    border-radius: 50px;
+    float: left;
+    margin-left: 2.6em;
+}
+.post-title {
+    font-size: 1.2em;
+    color: #8B8989;
+    margin-bottom: 0.2em;
+    margin-left: 20%;
+    text-decoration: none;
+}
+#hora{
+    background:#698B69;
+    font-size: 12px;
+    color:#fff ;
+    margin-left: 15%;
+}
+.post-meta {
+    color: #999;
+    font-size: 70%;
+    padding: 10%;
+    margin: 5px;
+    background: #fff;
+    margin-top: 10px;
+}
+.email-subject-2 {
+    margin-top: 5px;
+    float:right;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.post-description {
+    color: #444;
+    text-align: center;
+    margin-top: -50px;
+
+}
+.email-desc-2{
+    text-align: center;
+    font-size: 70%;
+    margin: 0.4em 0;
+    margin-top: -20px;
+}
+#list.active .list-inner {
+    display: block;
+    padding: 6em 1;
+    margin-top: -20px;
+}
+.list-inner {
+    display: block;
+    padding: 2em 1;
+}
+.separacao{
+    margin-top: 11%;
+}
+/*
+ * -- MENU STYLES --
+ * Make the menu have a very faint box-shadow.
+ */
+.pure-menu {
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+
+.pure-menu-link {
+    padding: .5em .7em;
+}
+
+.home-menu {
+    background: #000000;
+}
+
+/*
+ * -- BANNER --
+ * The top banner with the headings. By using a combination
+ * of `display: table;` and `display: table-cell;`, we can
+ * vertically center the text.
+ */
+
+.banner {
+    background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;
+    text-align: center;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');
+
+    height: 50%;
+    width: 100%;
+    margin-bottom: 2em;
+    display: table;
+}
+
+    .banner-head {
+        display: table-cell;
+        vertical-align: middle;
+        margin-bottom: 0;
+        font-size: 2em;
+        color: white;
+        font-weight: 500;
+        text-shadow: 0 1px 1px black;
+    }
+
+
+
+/*
+ * -- PRICING TABLE WRAPPER --
+ * This element wraps up all the pricing table elements
+ */
+ .pricing-tables,
+ .information {
+    max-width: 980px;
+    margin: 0 auto;
+ }
+.pricing-tables {
+    margin-bottom: 3.125em;
+    text-align: center;
+}
+
+/*
+ * -- PRICING TABLE  --
+ * Every pricing table has the .pricing-table class
+ */
+.pricing-table {
+    margin: 0 0.5em 2em;
+    padding: 0 0 3em;
+}
+
+/*
+ * -- PRICING TABLE HEADER COLORS --
+ * Choose a different color based on the type of pricing table.
+ */
+.pricing-table-free .pricing-table-header {
+    margin-top: -160px;
+    border-radius: 10%;
+    background: #519251;
+}
+
+.pricing-table-biz .pricing-table-header {
+    margin-top: 140px;
+    position: relative;
+    background: #556B2F;
+}
+
+#nome-span{
+    white-space: nowrap;
+    text-align: center;
+}
+.nome-usuario{
+    text-align: center;
+    margin-left: 90px;
+    margin-top: -640px;
+    white-space: nowrap;
+}
+
+.card{
+    margin-top: -170px;
+    margin-left: -40px;
+}
+#card-2{
+  margin-left: 10px;
+  margin-top: -210px;
+  color: #fff;
+  background: #000000;
+}
+.card-3{
+    display: none;
+}
+.dropdown-menu{
+    border:none; 
+    background:#4F4F4F    ;
+}
+.card-body-2{
+        display: none;
+    }
+/*
+ * -- PRICING TABLE HEADER --
+ * By default, a header is black/white, and has some styles for its <h2> name.
+ */
+.pricing-table-header {
+    background: #111;
+    color: #fff;
+    margin-left: -370px;
+    width: 370px;
+}
+    .pricing-table-header h2 {
+        margin: 0;
+        padding-top: 1em;        
+        font-size: 1em;
+        font-weight: normal;
+        bottom: -15px;
+    }
+
+
+/*
+ * -- PRICING TABLE PRICE --
+ * Styles for the price and the corresponding <span>per month</span>
+ */
+.pricing-table-price {
+    font-size: 6em;
+    margin: 0.2em 0 0;
+    font-weight: 100;
+}
+    .pricing-table-price span {
+        display: block;
+        text-transform: uppercase;
+        font-size: 0.2em;
+        padding-bottom: 2em;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.5);
+        *color: #fff;
+    }
+
+
+
+/*
+ * -- PRICING TABLE LIST --
+ * Each pricing table has a <ul> which is denoted by the .pricing-table-list class
+ */
+ .home-menu a:hover{
+  background-color: #363636;
+  color: #000000;
+ }
+ .home-menu a{
+  text-decoration: none;
+ }
+ .pricing-table-list a{
+    text-decoration: none;
+ }
+#span-status{
+  margin-top: -10px;
+}
+.pricing-table-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 50px;
+    text-align: center;
+    margin-left: -200px;
+    width: 250px;
+    
+}
+
+.linha{
+    width: 720px;
+    height: 3px;
+    color:#2F4F4F;
+    border-bottom: 4px solid #556B2F;
+    border-radius: 4px;
+    margin-top: -8px;
+}
+.linha-2{
+    width: 630px;
+    height: 3px;
+    color:#2F4F4F;
+    border-radius: 4px;
+    margin-top: 07px;
+    margin-left: 10px;
+}
+
+.jumbotron{
+   margin-left: 300px;
+   margin-top: -585px;
+}
+
+.fab{
+  position: fixed;
+  bottom:15px;
+  right:10px;
+}
+
+.fab button{
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #BEBEBE;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0,0,0,.4);
+  font-size: 24px;
+  color: white;
+    
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.fab button.main{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #000000;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+}
+
+.fab button.main:before{
+  content: '✉';
+  color:#2E8B57;
+}
+
+.fab ul{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  padding:0;
+  padding-right:5px;
+  margin:0;
+  list-style:none;
+  z-index:10;
+  
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.fab ul li{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: -10%;
+  opacity: 0;
+  
+  -webkit-transition: .3s ease-out;
+  -moz-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.fab ul li label{
+  margin-right:10px;
+  white-space: nowrap;
+  display: block;
+  margin-top: 10px;
+  padding: 5px 8px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  border-radius:3px;
+  height: 18px;
+  font-size: 16px;
+  pointer-events: none;
+  opacity:2;
+  
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.fab button.main:active,
+.fab button.main:focus{
+  outline: none;
+  background-color: #000000;
+  box-shadow: 0 3px 8px rgba(0,0,0,.5);
+ }
+ 
+.fab button.main:active:before,
+.fab button.main:focus:before{
+  content: '🗃';
+}
+
+.fab button.main:active + ul,
+.fab button.main:focus + ul{
+  bottom: 70px;
+}
+
+.fab button.main:active + ul li,
+.fab button.main:focus + ul li{
+  margin-bottom: 10px;
+  opacity: 1;
+}
+
+.fab button.main:active + ul li:hover label,
+.fab button.main:focus + ul li:hover label{
+  opacity: 1;
+}
+#configuracoes{
+    display:none;
+}
+.tabela-mobile{
+    display: none;
+}
+/*
+ * -- PRICING TABLE LIST ELEMENTS --
+ * Styles for the individual list elements within each pricing table
+ */
+.pricing-table-list li {
+    padding: 0.8em 0;
+    background: #FFFFFF;
+    border-bottom: 2px solid #e7e7e7;
+    margin-left: -220px;
+}
+
+
+/*
+ * -- PRICING TABLE BUTTON --
+ * Styles for the "Choose" button at the bottom of a pricing table.
+ * This inherits from Pure Button.
+ */
+.button-choose {
+    border: 1px solid #ccc;
+    background: #DCDCDC;
+    color: #333;
+    border-radius: 2em;
+    font-weight: bold;
+    position: relative;
+    bottom: -1.5em;
+    left: -1em;
+}
+
+#button-editar-capa{
+    bottom: -3.5em;
+    left: 38em;
+}
+#button-editar-capa-2{
+    display:none;
+}
+#button-editar-informacoes{
+    left: -17.5em;
+}
+
+.information-head {
+    color: black;
+    font-weight: 500;
+}
+
+.footer {
+    background: #111;
+    color: #888;
+    text-align: center;
+   display: none;
+}
+    .footer a {
+        color: #ddd;
+    }
+
+
+
+/*
+ * -- TABLET MEDIA QUERIES --
+ * On tablets, we want to slightly adjust the size of the banner
+ * text and add some vertical space between the various pricing tables
+ */
+@media(min-width: 767px) {
+
+    .banner-head {
+        font-size: 4em;
+    }
+    .pricing-table {
+        margin-bottom: 0;
+    }
+    
+}
+/*
+ * -- PHONE MEDIA QUERIES --
+ * On phones, we want to reduce the height and font-size of the banner further
+ */
+@media only screen and (max-width: 600px) {
+    .l-content {
+        margin: 0 auto;
+        
+    }
+    .l-box {
+        padding: 0.5em 2em;
+        
+    }
+    .home-menu pure-menu pure-menu-horizontal{
+        width: 100%;
+    }
+    #configuracoes-1{
+        display: none;
+    }
+    #configuracoes{
+        display:inline;
+    }
+    .banner {
+        height: 350px;
+    }
+    .banner-head {
+        font-size: 3em1;
+    }
+    
+    .card{
+        display:inline;
+        top: -130px;
+        margin-left: -1px;
+        display:inline;
+     
+    }
+    .card-2{
+        display:none;
+    }
+    #card-2{
+    margin-left: 10px;
+    margin-top: 30px;
+    color: #000000;
+    background: none;
+       
+    }
+    .card-img-top{
+        display:inline;
+    }
+    .card-body{
+        margin-top: 80px; 
+        color: #556B2F ;
+        background: transparent;
+        margin-left: -60px;
+    }
+    .card-body-2{
+        display: none;
+    }
+    .button-choose{
+        border: 1px solid #ccc;
+        background: #DCDCDC;
+        border-radius: 2em;
+        font-weight: bold;
+        position: relative;
+        bottom: -1.5em;
+        left: 7.5em;
+        padding: 4px 5px;
+        top:-265px;
+        display: inline;
+        color: #000000;
+    }
+    #button-editar-capa{
+        top: 55px;
+        left: -7em;
+        padding: 3px 5px;
+        color:#FFFFFF;
+        display:none;
+    }
+    #button-editar-capa-2{
+        top: 55px;
+        left: -8em;
+        padding: 3px 5px;
+        display: inline;
+        color:#FFFFFF; 
+        background: transparent;
+    }
+    .pricing-table-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0px 50px;
+        text-align: center;
+        margin-left: -200px;
+        width: 250px;
+       display: none;
+    }
+    .pricing-table-biz .pricing-table-header {
+        margin-top: 140px;
+        position: relative;
+        background: transparent;
+    }
+    .tabela-mobile {
+        margin-top: -430px;
+        display: list-item;
+        margin:-8px;
+    }
+    .jumbotron{
+        display:none;
+    }
+    .quadrado{
+        display:none;
+    }
+    h2, h3 {
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        font-weight: 600;
+        display: inline;
+    }
+    .nome-usuario {
+        font-size: 16px;
+        margin-left:-30px;
+        margin-top: -680px;
+        background: #CDC9C9;
+        color: #FFFFFF;
+    }
+    #nome-span{
+        white-space: nowrap;
+        margin-top: -560px;
+        background: #CDC9C9;
+    }
+    #span-status{
+        font-size: 11.1px;
+        display:inline;
+        word-wrap:  normal;
+        top: -5px;
+    }
+    body {
+        background:  #EEE9E9        ;
+        color: #526066;
+    }
+   #span-seguindo{  
+    float: left;
+   }   
+    .linha{
+        width: 320px;
+        color:#2F4F4F;
+        border-bottom: 3px solid #556B2F;
+        border-radius: 4px;
+        margin-top: 15px;
+        
+    }
+    .linha-2{
+        display: none;
+    }
+}
+/*
+ * -- PHONE MEDIA QUERIES --
+ * On phones, we want to reduce the height and font-size of the banner further
+ */
+@media (min-width: 480px) {
+    .banner {
+        height: 400px;
+    }
+    .banner-head {
+        font-size: 3em;
+    }
+}

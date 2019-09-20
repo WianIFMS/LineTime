@@ -1,0 +1,8 @@
+	[RF01] O Sistema deve permitir que o usuario cadastre sua Empresa;
+
+	[RF02] O Sistema deve permitir que o Admistrados da Empresa fassa postagens de 			       anúncios ou de vagas de emprego;
+
+	[RF03] O Sistema deve permitir que o Administrador da Empresa fassa alterações no 	       perfil da empresa;
+
+	[RF04] O Sistema deve permitir que o Administrador da Empresa edite e exclua 		               postagens;
+	[RF05] O Sistema deve permitir que o Admistrador fassa pesquisa em seus posts; 

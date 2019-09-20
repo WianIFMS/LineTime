@@ -1,0 +1,179 @@
+body{
+	background-image: url(file-icons.png);
+	background-repeat: no-repeat;
+
+}
+
+#campo_cadastro{
+	margin-top: 20px;
+
+}
+.btn {
+	margin-top: 10px;
+	
+}
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+.home-menu {
+    background: #000000;
+}
+
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+    color: #FFFFF0;
+}
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #006400;
+}
+
+.email-item-unread {
+    border-left: 6px solid #556B2F;
+    border-radius: 2px;
+}
+.email-item-unread-2{
+    border-left: 6px solid #FF4500;
+    border-radius: 2px;
+}
+.nav-item {
+	border-radius: 5px;
+}
+.menu_login {
+	padding:20px;
+}	
+
+.menu_login {
+	margin-top: 150px;
+	margin-left:200px;
+}	
+
+.div_conteudo {
+				background-color: black;
+				float: both;
+				font-size: 25px;
+}				
+
+.div_conteudo1 {
+				background-color: white;
+				float: both;
+				margin-top:5%;
+}				
+
+.head_2 {
+		margin-left:90px;
+		margin-top:-30px;
+}		
+
+.img {
+		margin-top:-30px;
+}		
+
+.linha {
+		margin-top:10px;
+		margin-left:0px;
+}		
+
+.page-header {
+			  margin-left:100px;
+			  margin-top: 20px;
+			  margin-bottom: 40px;
+}
+
+.img_S {
+		margin-left:140px;
+		margin-top:20px;
+		border: 2px dashed #B22222;
+		float:left;
+		padding:5px;
+
+}		
+
+.footer {
+			margin-top: 440px;
+}			
+
+.img_F { 
+		float:left;
+		width:100%;
+		height:560px;
+		background:url(../imagens/corpo/img_F.jpg) repeat-x top center;
+
+}		
+
+.panel-group {
+		 margin-top:-430px;
+		 float:center;
+		 margin-right:0px;
+		 border:3px inset green;
+		 background-color:#B4EEB4;
+}
+
+.page-header h1 {
+				 margin-top:-20px;
+				 
+}	
+
+.row {
+		background-color:transparent;
+}
+
+@media (min-width: 48em) {
+
+    /* We increase the body font size */
+    body {
+        font-size: 16px;
+    }
+
+    /* We can align the menu header to the left, but float the
+    menu items to the right. */
+    .home-menu {
+        text-align: left;
+    }
+        .home-menu ul {
+            float: right;
+        }
+
+    /* We increase the height of the splash-container */
+/*    .splash-container {
+        height: 500px;
+    }*/
+
+    /* We decrease the width of the .splash, since we have more width
+    to work with */
+    .splash {
+        width: 50%;
+        height: 50%;
+    }
+
+    .splash-head {
+        font-size: 250%;
+    }
+
+
+    /* We remove the border-separator assigned to .l-box-lrg */
+    .l-box-lrg {
+        border: none;
+    }
+
+}
+
+@media (min-width: 78em) {
+    /* We increase the header font size even more */
+    .splash-head {
+        font-size: 300%;
+    }
+}

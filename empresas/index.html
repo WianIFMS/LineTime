@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+	
+		<head>
+			<title> Empresas LT </title>
+				
+				<link rel="stylesheet" href="formatacao.css">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta charset="utf-8">	
+
+				<link rel="stylesheet" href="estilo.css" media="(min-width: 480px) and (max-width: 900px)"/>
+				<link rel="stylesheet" href="estilo.css" media="screen and (max-width: 480px)" />
+				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+		
+				<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    
+   				<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    
+    			<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		</head>
+		
+<body class="body">
+<style type="text/css">
+	.button-secondary {
+        color: white;
+        border-radius: 4px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        background: rgb(66, 184, 221); /* this is a light blue */
+	}	
+	.button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+            color:white;
+            margin-left: 15px;
+     
+    }
+    .button-success a {
+    	text-decoration:none;
+    }
+    #salvar {
+            background: #000000;
+            color:#7CCD7C;
+            margin-top:-4%;
+    }
+    .email-item-unread-2 {
+   		border-bottom: 3px solid #556B2F;
+    	border-radius: 5px;
+	}
+	.email-item-unread-3 {
+   		border-bottom: 3px solid #F5F5F5;
+    	border-radius: 5px;
+	}
+</style>
+		<div class="container">
+			<div class="header">
+   
+			    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+			        <a class="pure-menu-heading" href=""><font color="#00CD66">Line<font color="#B22222">T</font>ime<img src="imageshtml.png" class="avatar" width="24" height="24" alt="">
+			        </a> </font>	
+
+			        <ul class="pure-menu-list">
+			            <li class="pure-menu-item email-item-unread"><a href="../index.php" class="pure-menu-link">Voltar a pagina principal <i class="fas fa-user-circle"></i></a></li>
+			        </ul>
+			    </div>	
+			</div>
+			
+			<div class="img-file-img">	<img src="imageshtml.png" class="avatar" width="130" height="130" alt="">	</div>		
+			<div class="content-wrapper">
+			    <div class="content">
+			        <h2 class="content-head is-center"><font color="#2E8B57">Line<font color="#8B1A1A">T</font>ime</font> Empresas <i class="fas fa-user-tie"></i></h2>
+
+			        <div class="container">
+				        <div class="pure-g-u-2">
+				            <div class="l-box pure-u-4 pure-u-md-1-3 pure-u-lg-1-2">
+				            	<div class="campo_cadastro">
+									<div id="formulario_2">
+										<h3> <font color="#DCDCDC"><div id="campo_cadastro">Login da pagina</div></font> </h3>
+											<form id="formulario2" method="POST" action="ValidaLogin.php">
+												<div class="row">
+													<div class="col-md-6">
+														<div class="form-group">
+															<label for="formGroupExampleInput"> <b>Nome da empresa</b></label>
+															<input id="n1" name="nome" type="text" class="form-control" id="formGroupExampleInput" placeholder="Informe o nome da empresa">
+														</div>
+													</div>	
+													<div class="col-md-6">	
+														<div class="form-group">
+															<label for="formGroupExampleInput2"><b>Chave de acesso</b></label>
+															<input id="n2" name="chave" type="password" class="form-control" id="formGroupExampleInput2" placeholder="Informe sua chave de acesso">
+														</div>
+													</div>
+													<button type="submit" class="button-success pure-button" id="botao_1"><font color="#FFFFFF">Entrar</font></button>
+												</div>
+											</form>	
+										</div>
+								</div>
+				            					<hr></hr>
+							    <div class="informacao">
+								    <h3 class="content-subhead">
+								        <i class="fas fa-tools"></i>
+								            Conheça nossa plataforma para ajudar sua empresa
+								    </h3>
+								    	<p>
+								            <font color="#FFFFFF">
+									            Você empreendedor, pode divulgar sua empresas em diversos modulos diferentes.
+									            Desde do micro empreendedor até grandes empresas, terão a oportunidade de obter
+									            views de nossos usuários em uma forma bem dinâmica e acessivel ao empreendedor.
+									        </font>    
+								        </p>
+								        <button class="button-secondary pure-button">Saber mais</button>
+								</div> 
+					<div class="col-md-9" id="cadastroEmpresa">
+				
+						<form method="POST" action="SalvarEmpresa.php">
+							<h3> <font color="#DCDCDC">Cadastro da Empresa</font> <font color="#000000"><i class="fas fa-cloud"></i></font> </h3>
+							
+							 <label><strong><font color="#FFFFFF">Nome da Empresa</font></strong></label>
+	                        <input type="text" name="nome" placeholder="Nome da Empresa" class="form-control">
+
+	                        <label> <strong><font color="#FFFFFF">CNPJ</font></strong></label>
+	                        <input type="number" name="cnpj" placeholder="Numero do CNPJ" class="form-control">
+											
+							<label for="estado"><strong><font color="#FFFFFF">Tipo de Negocio</font></strong></label>
+										<input type="text" name="tipo_negocio" class="form-control">
+
+							<strong><font color="#FFFFFF">Cidade <i class="fas fa-city"></i></font></strong><br/>
+	                        <input type="text" name="cidade" class="form-control">
+
+							<label for="logo"><strong><font color="#FFFFFF">Logo <i class="fas fa-file-export"></i></font></strong></label>
+							<input type="file" name="logo" class="form-control email-item-unread-3" id="input-file"><br/>
+							
+							<button type="submit" class="btn btn-dark btn-lg btn-block email-item-unread-2" id="salvar">Salvar Pagina <i class="fas fa-share-square"></i></button>
+						</form>
+					</div>
+							</div>	
+						</div>	
+					</div>			      
+			</div>
+		</div>
+
+			
+			
+						
+		
+</body>				
+</html>		
