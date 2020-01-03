@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img{
+		hight:60px;
+		width:60px;
+	}
+.row{
+	margin-top:5px;
+}	
+.footer{
+		margin-top:30px;
+}		
+.card-body {
+			background-color:#000000;
+}	
+#Adicionar_Anuncio{
+				margin-top:10px;
+}	
+.botao_carregarfoto{
+					margin-left:30px;
+					border-radius: 10px;
+}					
+.botao_salvar_cancelar{
+						margin-top:0px;
+						
+}	
+.container{
+			padding: 10px;
+			border-radius: 5px;
+			margin-top:5px;
+}			
+
+</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Administração-Blog</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background-color: #3CB371">
+<div class="container" style="background-color: #FFE4E1">
+<div align="center" class="jumbotron">
+		<font color="#2E8B57"><h1>Novo Anuncio</h1></font>
+	</div>
+
+	  <header style="margin-top: -5%;">
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#548B54;" >
+       
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="administracao.html"><font color="#FFFFFF"><b>Inicio</b></font><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><font color="#FFFFFF"><b>HTML</b></font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><font color="#FFFFFF"><b>CSS</b></font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><font color="#FFFFFF"><b>Javascript</b></font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><font color="#FFFFFF"><b>Jquery</b></font></a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="login.html"><font color="#FFFFFF"><b>Sair</b></font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><font color="#FFFFFF"><b>Sobre</b></font></a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-light my-2 my-sm-0" type="submit"><b>Pesquisar</b></button>
+          </form>
+        </div>
+      </nav>
+    </header>	
+
+
+
+	<h3 align="left"><font color="#2E8B57"><div id="Adicionar_Anuncio">Adicionar Anuncio</div></font></h3>	
+	<form>
+		<div class="row">
+					
+						<div class="col-md-6">
+						  <div class="form-group">
+						    <label for="exampleFormControlInput1"><font color="#000000"><b>Titulo</b></font></label>
+						    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="titulo" autofocus="">
+						  </div>
+						</div>
+			
+						<div class="col-md-6">
+							 <div class="form-group">
+								    <label for="exampleFormControlSelect1"><font color="#000000"><b>Categoria</b></font></label>
+								    <select class="form-control" id="exampleFormControlSelect1">
+								      <option>Restaurante</option>
+								      <option>Oficinas</option>
+								      <option>Lazer</option>
+								      <option>Esporte</option>
+								      <option>Moda</option>
+								    </select>
+		  					</div>
+						</div>
+		</div>
+			
+			<div class="row">
+				<div class="col-md-12">	
+				  <div class="form-group">
+				    <label for="exampleFormControlTextarea1"><font color="#000000"><b>Descrição Aqui:</b></font></label>
+				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				  </div>
+				</div>
+			</div>
+
+	
+
+			<div class="row">
+				<div class="col-md-4">
+					<img src="th.jpg" class="img-responsive" alt="">
+				</div>	
+			</div>
+		
+		<div class="botao_carregarfoto">
+			<div class="row">
+				 <div class="form-group">
+					<label for="exampleFormControlFile1"><font color="#000000"><b>Carregar foto</b></font></label>
+					<input type="file" class="form-control-file" id="exampleFormControlFile1" style="background-color:#8FBC8F;">
+				</div>
+
+			</div>
+		</div>
+			<div class="botao_salvar_cancelar">	
+				<div class="row">
+					<div class="col-md-6">
+						<button type="button" class="btn btn-danger btn-lg btn-block">Cancelar</button>
+					</div>	
+					<div class="col-md-6">	
+						<button type="button" class="btn btn-success btn-lg btn-block">Salvar</button>
+					</div>
+				</div>
+			</div>
+	</form>
+</div>
+
+   <div class="footer">	
+			<div class="card text-center">
+				<div class="card-header">
+					<font size="6"><font color="#006400">Line</font><font color="#B22222">T</font><font color="#006400">ime</font></font>
+				</div>
+			  <div class="card-body">
+				<h5 class="card-title"><font color="#FFFAFA">linetime.com</font></h5>
+				<p class="card-text"><font color="#FFFAFA">Todos os direitos reservados.</font></p>
+			  </div>
+			  <div class="card-footer text-muted">
+				
+			  </div>
+			</div>
+		</div>
+<div>
+</body>
+</html>

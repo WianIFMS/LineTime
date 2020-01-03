@@ -1,5 +1,5 @@
 <?php
-        	session_start(); 
+        	session_start();
         	include_once("../../conexao.php");
         	$id_de = $_SESSION['id'];
         	$id_grupo = 13;

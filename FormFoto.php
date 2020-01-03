@@ -1,32 +1,32 @@
-<?php
-require_once('Conexao.php');
+<?php require_once('Conexao.php');?>
 
+<?php
 if (isset($_POST['id'])) {
-    $id = $_POST['id'];
-} else {
-    $id = 0;
+	$id_usuario = $_POST['id'];
+}else{
+	$id_usuario = 0;
 }
 
-$sql = "SELECT * FROM usuarios where id =?";
+$sql = "SELECT * FROM fotoperfil where id =?";
 $sqlprep = $conexao->prepare($sql);
-$sqlprep->bind_param("i", $id);
+$sqlprep->bind_param("i",$id);
 $sqlprep->execute();
 $sqlResultado = $sqlprep->get_result();
 $vetorUmRegistro = $sqlResultado->fetch_assoc();
-?>
-<form  action="SalvarFoto"  method="post" enctype= "multipart/form-data">
-    <div class="row">
-        <div class="col-md-2">
-            <div class="form-group">
-              
-                <input hidden="ture" value="<?= $vetorUmRegistro['id']; ?>" readonly="true" class="form-control" type="number" name="id" id="id" >
-            </div>
 
-            <div class="form-group"> 
-               
-                <input type="file"  value="<?= $vetorUmRegistro['fotoperfil']; ?>" class="form-control" name="fotoperfil" id="fotoperfil" >
-                <img src="<?= $vetorUmRegistro['fotoperfil']; ?>"> <br><br>
-            </div> 
-            <button type="submit" class="btn btn-success">Salvar</button><br>
-            
-            </form>
+?>
+<form  name="myForm" action="SalvarFoto" onsubmit="return validateForm()" method="post" enctype="multipart/form-data">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="form-group">
+				 <label for="id">ID</label>
+				 <input value="<?=$vetorUmRegistro['id'];?>" readonly="true" class="form-control" type="number" name="id" id="id" >
+				</div>
+			<	
+			<div class="form-group"> 
+			 <label for="foto">FotoPerfil</label>
+			 <input value="<?=$vetorUmRegistro['foto_perfil'];?>" class="form-control" type="file" name="foto_perfil" id="foto_perfil" >
+			</div> 
+			<button type="submit" class="btn btn-success">Enviar</button>
+				
+	</form>

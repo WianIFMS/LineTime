@@ -1,10 +1,10 @@
 <?php
-
-require_once("Conexao.php");
+require_once("autoload.php");
 session_start();
 
 $sql = "UPDATE usuarios SET online = 0 WHERE id = ?";
-$sqlprep = $conexao->prepare($sql);
+
+$sqlprep = Conexao::getConexao()->prepare($sql);
 $sqlprep->bind_param("i", $_SESSION["id"]);
 $sqlprep->execute();
 
@@ -12,4 +12,7 @@ $sqlprep->execute();
 session_destroy();
 
 header('Location: FormLogin.php');
+
+
+
 ?>

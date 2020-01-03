@@ -24,7 +24,7 @@ $vetorRegistros = $resultadosql->fetch_all(MYSQLI_ASSOC);
       $resultadoSql = $sqlprep->get_result();
       $usuario = $resultadoSql->fetch_assoc();
 
-$sql= "SELECT * FROM postagemempresas WHERE id = ?";
+$sql= "SELECT * FROM postagens WHERE id = ?";
 
       $sqlprep = $conexao->prepare($sql);
       $sqlprep->bind_param("i" ,$vetorUmRegistro["id"]);
@@ -40,12 +40,12 @@ $sql= "SELECT * FROM postagemempresas WHERE id = ?";
          <!-- <img width="48" height="48" alt=" <?php echo $usuario['nome'];?>" class="post-avatar" src="img/common/tilo-avatar.png">-->
            <img width="48" height="48"  class="post-avatar" src="<?=$value["foto"];?>">
 
-          <!-- <h3 class="post-title"><a href=""><?php echo $usuario['nome'];?></a></h3>
+          <h3 class="post-title"><a href=""><?php echo $usuario['nome'];?></a></h3>
 
           <div id="hora">
             <i class="fas fa-stopwatch"></i>
             Publicou em <?php echo $postagem['data_postagem'];?>
-          </div>-->
+          </div>
 
           <hr></hr>
 

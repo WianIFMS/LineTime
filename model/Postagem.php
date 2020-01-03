@@ -13,26 +13,25 @@ class Postagem{
        $this->id_usuario = $id_usuario;
         
     }
-
-     public function getId() {
+function getId() {
         return $this->id;
     }
-  public function getPostagem() {
+   function getPostagem() {
         return $this->postagem;
     }
 
   
- public function getIdUsuario() {
+ function getIdUsuario() {
         return $this->id_usuario;
       }
- public function setId($id) {
+ function setId($id) {
         $this->id = $id;
     }
-   public function setPostagem($postagem) {
+     function setPostagem($postagem) {
         $this->postagem= $postagem;
     }
  
-    public function setIdUsuario($id_usuario) {
+     function setIdUsuario($id_usuario) {
         $this->id_usuario = $id_usuario;
     }
   

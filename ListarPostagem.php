@@ -3,8 +3,8 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
-require_once"autoload.php";
+//session_start();
+//require_once"autoload.php";
 require_once"Conexao.php";
 
 $sql = "SELECT * FROM postagens  ORDER BY data_postagem DESC";
@@ -37,14 +37,14 @@ $vetorRegistros = $resultadosql->fetch_all(MYSQLI_ASSOC);
             $sqlprep->execute();
             $resultadoSql = $sqlprep->get_result();
             $usuario = $resultadoSql->fetch_assoc();
-            $id_user = $_SESSION["id"];
+            //$id_user = $_SESSION["id_usuario"];
 
-            $sql = "SELECT * FROM amigos WHERE id = ?";
+           /* $sql = "SELECT * FROM amigos WHERE id = ?";
             $sqlprep = $conexao->prepare($sql);
             $sqlprep->bind_param("i", $vetorUmRegistro["id_seguido"]);
             $sqlprep->execute();
             $resultadoSql = $sqlprep->get_result();
-            $amigo = $resultadoSql->fetch_assoc();
+            $amigo = $resultadoSql->fetch_assoc();*/
           
          
 
@@ -70,7 +70,7 @@ $vetorRegistros = $resultadosql->fetch_all(MYSQLI_ASSOC);
                                     // Inicio do if ----------------------------------------------
                                     // Se este post for do usuário que está logado
                                     // então mostre os botão de apagar post
-                                    if ($vetorUmRegistro["id_usuario"] === $_SESSION["id"]) {
+                                    if ($vetorUmRegistro["id_usuario"] === $usuario["id"]) {
                                         ?>
                                         <button type="submit">Apagar</button>
                                         <?php
@@ -86,7 +86,7 @@ $vetorRegistros = $resultadosql->fetch_all(MYSQLI_ASSOC);
                                     // Inicio do if ----------------------------------------------
                                     // Se este post for do usuário que está logado
                                     // então mostre os botão de editar post
-                                    if ($vetorUmRegistro["id_usuario"] === $_SESSION["id"]) {
+                                    if ($vetorUmRegistro["id_usuario"] === $usuario["id"]) {
                                         ?>
                                         <button type="submit">Editar</button>
 

@@ -59,7 +59,7 @@
 			        </a> </font>	
 
 			        <ul class="pure-menu-list">
-			            <li class="pure-menu-item email-item-unread"><a href="../index.php" class="pure-menu-link">Voltar a pagina principal <i class="fas fa-user-circle"></i></a></li>
+			            <li class="pure-menu-item email-item-unread"><a href="#email" class="pure-menu-link">Voltar a pagina principal <i class="fas fa-user-circle"></i></a></li>
 			        </ul>
 			    </div>	
 			</div>
@@ -75,21 +75,21 @@
 				            	<div class="campo_cadastro">
 									<div id="formulario_2">
 										<h3> <font color="#DCDCDC"><div id="campo_cadastro">Login da pagina</div></font> </h3>
-											<form id="formulario2" method="POST" action="ValidaLogin.php">
+											<form id="formulario2" method="post" action="valida_login.php">
 												<div class="row">
 													<div class="col-md-6">
 														<div class="form-group">
-															<label for="formGroupExampleInput"> <b>Nome da empresa</b></label>
-															<input id="n1" name="nome" type="text" class="form-control" id="formGroupExampleInput" placeholder="Informe o nome da empresa">
+															<label for="formGroupExampleInput"> <b>Nome da empresa:</b></label>
+															<input id="n1" name="email" type="text" class="form-control" id="formGroupExampleInput" placeholder="Informe o nome da empresa">
 														</div>
 													</div>	
 													<div class="col-md-6">	
 														<div class="form-group">
-															<label for="formGroupExampleInput2"><b>Chave de acesso</b></label>
-															<input id="n2" name="chave" type="password" class="form-control" id="formGroupExampleInput2" placeholder="Informe sua chave de acesso">
+															<label for="formGroupExampleInput2"><b>Digite sua senha:</b></label>
+															<input id="n2" name="senha" type="password" class="form-control" id="formGroupExampleInput2" placeholder="Informe sua senha">
 														</div>
 													</div>
-													<button type="submit" class="button-success pure-button" id="botao_1"><font color="#FFFFFF">Entrar</font></button>
+													<button type="submit" class="button-success pure-button" id="botao_1"><a href="anuncios.php"><font color="#FFFFFF">Entrar</font></a></button>
 												</div>
 											</form>	
 										</div>

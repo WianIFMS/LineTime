@@ -46,7 +46,7 @@ class DaoPostagem {
 
     public function getLista() {
         $vetorObjetos = array();
-        $sql = "SELECT * from postagens order by data_postagem ";
+        $sql = "SELECT * from postagens order by data_postagem";
         $resultadoSql = $this->conexao->query($sql);
         $vetorRegistros = $resultadoSql->fetch_all(MYSQLI_ASSOC);
         foreach ($vetorRegistros as $registro) {

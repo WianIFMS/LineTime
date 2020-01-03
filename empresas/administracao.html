@@ -81,11 +81,11 @@
 		<div class="row">
 			<div class="col-md-3"> 
 				<h2>Aréa de Administração</h2>
-			<form method="POST" action="ValidaLogin.php">
-				
-				
-				<label for="email" id="mudanca">Chave</label>
-				<input class="form-control" type="password" name="chave">
+			<form method="POST" action="valida_login.php">
+				<label  for="email" id="mudanca">Nome da empresa</label>
+				<input class="form-control" class="form-control" type="text" name="email">
+				<label for="email" id="mudanca">Senha</label>
+				<input class="form-control" type="password" name="senha">
 				<button type="submit" class="btn btn-light" id="botao_1">Entrar</button>
 			</form>
 						 
@@ -111,9 +111,9 @@
                         <input type="text" name="cidade" class="form-control">
 
 						<label for="logo"><strong><font color="#DCDCDC">Logo</font></strong></label>
-						<input type="file" name="foto" id="foto" class="form-control"><br/>
+						<input type="file" name="logo" class="form-control"><br/>
 						
-						<button type="submit" class="btn btn-dark btn-lg btn-block" id="salvar">Salvar Empresa</button>
+						<button type="submit" class="btn btn-dark btn-lg btn-block" id="salvar">Salvar Pagina</button>
 						
 					</form>
 					</div>
